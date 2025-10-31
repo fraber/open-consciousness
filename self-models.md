@@ -1,10 +1,8 @@
-# Sheet1
+# self-models.md
+
 
 |Abbr.|Name|Data|Description|
 |---|---|---|---|
-| | | | |
-|Please analyze the text at the very end of this prompt with the List of self-models below and create a table with the following columns: - running number - Text excerpt where the self-model was found - Name of the self-model - Type of data used in the self-model - Data-structure used with the data Use one line per self-model found Here is the list of self-models to use:| | | |
-| | | | |
 |Robot / Hardware / Software models for incorporated AIs| | | |
 |body-3d|3D static Hardware “body” self-model|3D scene graph|3D model for robots and embodied AIs|
 |Body-kinematic|3D kinematic “body” self-models|3D kinematics|3D and kinematic model for robots and embodied AIs|
@@ -35,7 +33,6 @@
 | |Prediction accuracy| |confidence in its own predictions or decisions.|
 | |Planning tree| |branching possibilities of future actions of a plan already made|
 | | | | |
-| | | | |
 |Cognitive / Decision-Making Self-Models| | | |
 | |Memory availability| |working memory or long-term knowledge representation.|
 |attention|Attention focus| |what is currently being monitored vs. ignored.|
@@ -52,14 +49,12 @@
 | |Mood state| |internal affective state (for humans or affective AI).|
 | |Stress / pressure estimation| |predicted risk under current workload.|
 | | | | |
-| | | | |
 |Informational / Knowledge Self-Models| | | |
 | |Knowledge completeness| |gaps in its knowledge about the world.|
 | |Sensor model| |reliability and error rates of its sensory inputs.|
 | |Data freshness| |recency of information it holds.|
 | |Internal consistency| |conflicts between beliefs or models it holds.|
 | |Empathy/affective state prediction| |An extension of the "theory of mind" model that specifically focuses on predicting the emotional or affective state of other agents and how its own actions might influence that state.|
-| | | | |
 | | | | |
 |Social / Interaction Self-Models| | | |
 | |Theory of mind| |modeling how other agents perceive itself.|
@@ -70,8 +65,8 @@
 |Meta / Reflective Self-Models| | | |
 |episody|Episodic Memory|Data from all self-models during that time|This is a memory rather than a self-model. It contains the history of past actions and their outcomes in their raw format.|
 |awareness|Self-observation model| |monitoring which internal processes are active. “Processes” is very broad here, including perception (sensor input processing) and “higher” processes including planning, reasoning, etc. “Awareness” of processes does not mean “conscousness” as in “redness”. It is just input from an internal sensor that some processes are executed, taking up CPU cycles.|
-| |Self-improvement model| |how to improve its own performance over time.|
 | | | | |
+| |Self-improvement model| |how to improve its own performance over time.|
 | |Time-awareness| |Same as mem - tracking past actions and predicting future states.|
 | |Ethical / rule compliance| |awareness of whether it is following rules or constraints.|
 | |Creative/generative capacity| |A model that evaluates an agent's ability to produce novel and valuable outputs, distinct from simply performing a task reliably. This could include scoring the originality or aesthetic quality of its creations.|
