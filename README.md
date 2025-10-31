@@ -1,6 +1,23 @@
 # open-consciousness
 
-This repository contains a collection of self-models and annotated texts analyzed using **Functional Self-Model Analysis (FSMA)**. Currently it consists of the following files:
+This repo contains supporting material for a paper tentatively titled
+"A Proxy Metric for Functional Consciousness Using Self-Models."
+
+The paper proposes a proxy metric for functional consciousness—
+not in the sense of “what it feels like to be human,” but as a 
+practical model of an agent’s behavior. The approach is based on 
+enumerating the self-models that an agent implicitly or explicitly incorporates.
+
+## Functional Self-Model Analysis (FSMA)
+
+To identify and qualify self-models, we introduce a novel reasoning 
+framework called Functional Self-Model Analysis (FSMA).
+FSMA is a reasoning method that determines the minimal set of self-models required for a given cognitive or computational function.
+
+This repository includes the datasets used in the empirical analysis for this paper.
+
+For inquiries or collaboration, please contact me at fraber@fraber.de.
+
 
 ## Files
 
