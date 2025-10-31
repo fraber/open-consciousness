@@ -1,9 +1,9 @@
 # self-models.md
 
+## Robot Hardware / Software models for embodied AIs
 
 |Abbr.|Name|Data|Description|
 |---|---|---|---|
-|Robot / Hardware / Software models for incorporated AIs| | | |
 |body-3d|3D static Hardware “body” self-model|3D scene graph|3D model for robots and embodied AIs|
 |Body-kinematic|3D kinematic “body” self-models|3D kinematics|3D and kinematic model for robots and embodied AIs|
 |sensor|Sensory model| |A model with statistics on sensor data.|
@@ -17,8 +17,12 @@
 | |Model explainability model| |A meta-model that assesses its own ability to explain its decisions and reasoning to a human operator or to itself.|
 | |Fine-tuning model| |A model for determining the most effective and efficient way to update or fine-tune its internal parameters based on new data or tasks, optimizing its own learning process.|
 | |Safety protocol adherence model| |A model that specifically monitors and ensures compliance with hardcoded safety protocols, separate from the more abstract "ethical compliance" model. |
-| | | | |
-|Physical / Spatial Self-Models| | | |
+
+
+## Physical / Spatial Self-Models
+
+|Abbr.|Name|Data|Description|
+|---|---|---|---|
 | |3D body pose| |exact skeletal or joint configuration in space.|
 | |Physical position relative to objects| |e.g., distances, orientations to obstacles.|
 | |Movement trajectory| |planned vs. actual path over time.|
@@ -26,46 +30,73 @@
 | |Energy/fuel model| |battery levels, stamina, or fatigue.|
 | |Tool and object interaction| |understanding which objects it can grasp/manipulate.|
 | |Collision / contact probability| |likelihood of bumping into objects in next move.|
-| | | | |
-|Action / Planning| | | |
+
+
+
+## Action / Planning Self-Models
+
+|Abbr.|Name|Data|Description|
+|---|---|---|---|
 |performance|Action performance model| |what actions it can perform and how reliably.|
 |progress|Task progress| |how far along it is in achieving a specific task.|
 | |Prediction accuracy| |confidence in its own predictions or decisions.|
 | |Planning tree| |branching possibilities of future actions of a plan already made|
-| | | | |
-|Cognitive / Decision-Making Self-Models| | | |
+
+
+## Cognitive / Decision-Making Self-Models
+
+|Abbr.|Name|Data|Description|
+|---|---|---|---|
 | |Memory availability| |working memory or long-term knowledge representation.|
 |attention|Attention focus| |what is currently being monitored vs. ignored.|
 | |Learning rate| |self-estimation of how quickly it can adapt to new tasks.|
-| | | | |
-|Goal / Motivation Self-Models| | | |
+
+
+## Goal / Motivation Self-Models
+
+|Abbr.|Name|Data|Description|
+|---|---|---|---|
 | |Goal hierarchy| |subgoals and dependencies in pursuing objectives.|
 | |Need/drive state| |urgency of different internal needs (energy, curiosity, safety).|
 | |Reward expectation| |predicted outcomes or utilities of actions.|
 | |Conflict between goals| |prioritization model for competing objectives.|
 | |Confidence / uncertainty| |self-assessment of certainty in choices.|
-| | | | |
-|Emotional / Affective Self-Models| | | |
+
+
+## Emotional / Affective Self-Models
+
+|Abbr.|Name|Data|Description|
+|---|---|---|---|
 | |Mood state| |internal affective state (for humans or affective AI).|
 | |Stress / pressure estimation| |predicted risk under current workload.|
-| | | | |
-|Informational / Knowledge Self-Models| | | |
+
+
+## Informational / Knowledge Self-Models
+
+|Abbr.|Name|Data|Description|
+|---|---|---|---|
 | |Knowledge completeness| |gaps in its knowledge about the world.|
 | |Sensor model| |reliability and error rates of its sensory inputs.|
 | |Data freshness| |recency of information it holds.|
 | |Internal consistency| |conflicts between beliefs or models it holds.|
 | |Empathy/affective state prediction| |An extension of the "theory of mind" model that specifically focuses on predicting the emotional or affective state of other agents and how its own actions might influence that state.|
-| | | | |
-|Social / Interaction Self-Models| | | |
+
+## Social / Interaction Self-Models
+
+|Abbr.|Name|Data|Description|
+|---|---|---|---|
 | |Theory of mind| |modeling how other agents perceive itself.|
 | |Social role| |current role or status in a group (leader, helper, observer).|
 | |Communication state| |which messages it has sent, understood, or needs to send.|
 | |Trust / reputation model| |how others view or trust it.|
 | |Social influence model| |An assessment of its own persuasive ability or the impact of its actions on others, especially in collaborative or group settings. |
-|Meta / Reflective Self-Models| | | |
+
+## Meta / Reflective Self-Models
+
+|Abbr.|Name|Data|Description|
+|---|---|---|---|
 |episody|Episodic Memory|Data from all self-models during that time|This is a memory rather than a self-model. It contains the history of past actions and their outcomes in their raw format.|
 |awareness|Self-observation model| |monitoring which internal processes are active. “Processes” is very broad here, including perception (sensor input processing) and “higher” processes including planning, reasoning, etc. “Awareness” of processes does not mean “conscousness” as in “redness”. It is just input from an internal sensor that some processes are executed, taking up CPU cycles.|
-| | | | |
 | |Self-improvement model| |how to improve its own performance over time.|
 | |Time-awareness| |Same as mem - tracking past actions and predicting future states.|
 | |Ethical / rule compliance| |awareness of whether it is following rules or constraints.|
