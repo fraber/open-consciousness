@@ -1,11 +1,20 @@
 # self-models.md
 
-## Robot Hardware / Software models for embodied AIs
 
+## Faculties
 |Abbr.|Name|Data|Description|
 |---|---|---|---|
-|body-3d|3D static Hardware “body” self-model|3D scene graph|3D model for robots and embodied AIs|
-|Body-kinematic|3D kinematic “body” self-models|3D kinematics|3D and kinematic model for robots and embodied AIs|
+|attention faculty|Attention faculty|?|The capability to direct the attention to a sepcific signal source. As a result, the selected signals are processed with higher priority, others signal sources are muted. Attention direction is an action and may be planned or part of a plan. Attention faculty is different from attention self-model. "I listened to the faint music" is attention faculty, "I get distracted very easyily" is attention self-model.|
+|episodic memory faculty|episodic memory faculty|?|The faculty to remember past states or actions. Episodic memory is both a faculty, a self-model and the base for all other self-models.|
+|planning faculty|Planning|Directed acyclic graph of actions of sub-plans|Putting together multiple actions to achieve a goal (=desired outcome)|
+|predictive simulation|Predictive Simulation||Capability to create "dreamp up" a scenario|
+
+
+## Robot Hardware / Software models for embodied AIs
+|Abbr.|Name|Data|Description|
+|---|---|---|---|
+|3d|3D self-model|3D scene graph|Static 3D model of the body in it's surroundings|
+|kinematics|3D kinematic model|3D kinematics|3D kinematic model of the body in it's surroundings|
 |sensor|Sensory model| |A model with statistics on sensor data.|
 | |Sensory modality degradation| |A predictive model for the gradual decline or potential failure of specific sensors (e.g., camera resolution, microphone sensitivity). This is more specific than a general "sensor model."|
 | |Actuator stress/wear model| |An estimate of the physical strain and projected lifespan of mechanical components like joints, motors, or grippers. A human equivalent, like a "joint fatigue" model, is hinted at but is much more critical for a robot's maintenance.|
@@ -18,9 +27,7 @@
 | |Fine-tuning model| |A model for determining the most effective and efficient way to update or fine-tune its internal parameters based on new data or tasks, optimizing its own learning process.|
 | |Safety protocol adherence model| |A model that specifically monitors and ensures compliance with hardcoded safety protocols, separate from the more abstract "ethical compliance" model. |
 
-
 ## Physical / Spatial Self-Models
-
 |Abbr.|Name|Data|Description|
 |---|---|---|---|
 | |3D body pose| |exact skeletal or joint configuration in space.|
@@ -31,10 +38,7 @@
 | |Tool and object interaction| |understanding which objects it can grasp/manipulate.|
 | |Collision / contact probability| |likelihood of bumping into objects in next move.|
 
-
-
 ## Action / Planning Self-Models
-
 |Abbr.|Name|Data|Description|
 |---|---|---|---|
 |performance|Action performance model| |what actions it can perform and how reliably.|
@@ -42,18 +46,15 @@
 | |Prediction accuracy| |confidence in its own predictions or decisions.|
 | |Planning tree| |branching possibilities of future actions of a plan already made|
 
-
 ## Cognitive / Decision-Making Self-Models
-
 |Abbr.|Name|Data|Description|
 |---|---|---|---|
 | |Memory availability| |working memory or long-term knowledge representation.|
-|attention|Attention focus| |what is currently being monitored vs. ignored.|
+|attention|Attention focus| |What is currently being monitored vs. ignored?|
 | |Learning rate| |self-estimation of how quickly it can adapt to new tasks.|
 
 
 ## Goal / Motivation Self-Models
-
 |Abbr.|Name|Data|Description|
 |---|---|---|---|
 | |Goal hierarchy| |subgoals and dependencies in pursuing objectives.|
@@ -62,17 +63,13 @@
 | |Conflict between goals| |prioritization model for competing objectives.|
 | |Confidence / uncertainty| |self-assessment of certainty in choices.|
 
-
 ## Emotional / Affective Self-Models
-
 |Abbr.|Name|Data|Description|
 |---|---|---|---|
 | |Mood state| |internal affective state (for humans or affective AI).|
 | |Stress / pressure estimation| |predicted risk under current workload.|
 
-
 ## Informational / Knowledge Self-Models
-
 |Abbr.|Name|Data|Description|
 |---|---|---|---|
 | |Knowledge completeness| |gaps in its knowledge about the world.|
@@ -82,7 +79,6 @@
 | |Empathy/affective state prediction| |An extension of the "theory of mind" model that specifically focuses on predicting the emotional or affective state of other agents and how its own actions might influence that state.|
 
 ## Social / Interaction Self-Models
-
 |Abbr.|Name|Data|Description|
 |---|---|---|---|
 | |Theory of mind| |modeling how other agents perceive itself.|
@@ -92,11 +88,10 @@
 | |Social influence model| |An assessment of its own persuasive ability or the impact of its actions on others, especially in collaborative or group settings. |
 
 ## Meta / Reflective Self-Models
-
 |Abbr.|Name|Data|Description|
 |---|---|---|---|
 |episody|Episodic Memory|Data from all self-models during that time|This is a memory rather than a self-model. It contains the history of past actions and their outcomes in their raw format.|
-|awareness|Self-observation model| |monitoring which internal processes are active. “Processes” is very broad here, including perception (sensor input processing) and “higher” processes including planning, reasoning, etc. “Awareness” of processes does not mean “conscousness” as in “redness”. It is just input from an internal sensor that some processes are executed, taking up CPU cycles.|
+|awareness|Self-observation model| |Monitoring which internal processes are active, particular sensor perception. “Processes” is very broad here, including perception (sensor input processing) and “higher” processes including planning, reasoning, etc. using an "inner sense". “Awareness” of processes does not mean “conscousness”. It is just the input from an that certain processes are executed, taking up CPU cycles.|
 | |Self-improvement model| |how to improve its own performance over time.|
 | |Time-awareness| |Same as mem - tracking past actions and predicting future states.|
 | |Ethical / rule compliance| |awareness of whether it is following rules or constraints.|
